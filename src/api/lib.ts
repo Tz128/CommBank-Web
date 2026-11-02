@@ -51,3 +51,12 @@ export async function updateGoal(goalId: string, updatedGoal: Goal): Promise<boo
     return false
   }
 }
+
+export async function updateGoal(goalId: string, updatedGoal: Goal): Promise<boolean> {
+  try {
+    await axios.put(`${API_ROOT}/api/Goal/${goalId}`, updatedGoal)
+    return true
+  } catch (error: any) {
+    return false
+  }
+}
