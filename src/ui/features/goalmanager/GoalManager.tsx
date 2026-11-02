@@ -36,7 +36,7 @@ export function GoalManager(props: Props) {
     setTargetAmount(props.goal.targetAmount)
     setIcon(props.goal.icon)
     setEmojiPickerIsOpen(false)
-  }, [props.goal.id])
+  }, [props.goal.id, props.goal.icon])
 
   const hasIcon = () => icon != null
 
