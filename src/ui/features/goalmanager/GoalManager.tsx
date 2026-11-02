@@ -98,6 +98,8 @@ export function GoalManager(props: Props) {
     updateGoalApi(props.goal.id, updatedGoal)
   }
 
+
+
   return (
     <GoalManagerContainer>
       <NameInput value={name ?? ''} onChange={updateNameOnChange} />
